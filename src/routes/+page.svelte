@@ -1,6 +1,6 @@
 <script>
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
+	import welcome from '$lib/images/svelte-welcome.png';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
@@ -13,19 +13,13 @@
 	<h1>
 		<span class="welcome">
 			<picture>
-				<source srcset={welcome} type="image/webp" />
+				<source srcset={welcome} type="image/" />
 				<img src={welcome_fallback} alt="Welcome" />
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		Fucking <b>ABSOLUTELY</b> not.<br />
 	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
 </section>
 
 <style>
